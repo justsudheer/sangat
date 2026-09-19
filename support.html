@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Sangat</title>
+<meta name="description" content="Help with Sangat: Follow Voice, background playback, permissions, and how to report a problem.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <div class="name">Sangat</div>
+    <div class="script">संगत</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html" aria-current="page">Support</a>
+  <a href="notices.txt">Open-source notices</a>
+</nav>
+
+<h1>Support</h1>
+<p class="lede">Write to <a href="mailto:support@getsangat.com">support@getsangat.com</a> and you will get a reply. Most things are below.</p>
+
+<h2>Follow Voice</h2>
+
+<h3>It says "listening" but nothing happens</h3>
+<p>Follow Voice is deliberately slow to commit. It wants several seconds of settled, confident singing before it moves your accompaniment, because a tanpura that re-tunes itself every time you slide between two notes is worse than one that never moves. Sing a phrase and let it come to rest — resolving to Sa is exactly the signal it is looking for.</p>
+<p>If you do not want to wait, tap <strong>Use this Sa</strong> and it applies whatever it is hearing right now.</p>
+
+<h3>It picked the wrong Sa</h3>
+<p>Tap <strong>Start over</strong> and sing a few phrases that settle on your Sa. If it lands a fourth or a fifth away it has usually latched onto a strongly emphasised Ma or Pa; a phrase that comes down to Sa and stays there for a moment will move it.</p>
+<p>You can also just set Sa by hand on the <strong>Tune</strong> tab and turn Follow Voice off. Nothing else depends on it.</p>
+
+<h3>Turning off "Tune automatically"</h3>
+<p>Under <em>Behaviour</em> on the Voice tab. With it off, Follow Voice still listens and still shows you what it hears, but it will not change your accompaniment until you tap <strong>Use this Sa</strong>.</p>
+
+<h3>The microphone permission</h3>
+<p>Follow Voice is the only feature that uses the microphone, and it is only on while it is listening. If you declined the permission, the app will say so; you can grant it later in your phone's Settings under Sangat. Everything else in the app works without it.</p>
+
+<h2>Sound</h2>
+
+<h3>No sound at all</h3>
+<ul>
+  <li>Check the silent switch (iPhone) — Sangat respects it.</li>
+  <li>Check the per-instrument volume and mute on the <strong>Play</strong> tab, under <em>mix</em>.</li>
+  <li>If another app is playing, Sangat mixes with it rather than taking over. Stopping the other app usually explains it.</li>
+</ul>
+
+<h3>It stops when I lock the screen</h3>
+<p>It should not — Sangat keeps playing with the screen off, and shows transport controls on the lock screen. If it stops, check that your phone's battery saver is not restricting the app, and on Android that notifications are allowed for Sangat (the media controls are a notification, and a foreground service without one gets stopped by the system).</p>
+
+<h3>Changing Sa makes a brief change in tone</h3>
+<p>Expected, and the honest version of a trade-off. On the synthesised voices a new Sa means re-baking the instruments at that pitch — about 150 ms — and while that happens you hear the existing sound stretched to the new pitch so it follows your finger immediately, with the exact version swapping in when it is ready.</p>
+
+<h3>Recorded or synthesised?</h3>
+<p>Settings → <em>instrument sound</em>, one switch per instrument.</p>
+<p><strong>Recorded</strong> is the default: real tabla strokes, tanpura plucks and plucked strings, re-pitched on your phone to the Sa you chose. It has the grain of a struck skin and a plucked wire, which no model quite reproduces.</p>
+<p><strong>Synthesised</strong> is the physical model — the dayan's modes, the tanpura's jawari bridge, the swarmandal's stiffer strings — rendered at your exact pitch rather than re-pitched towards it. Some people prefer it at extreme Sa settings, where a recording has further to travel.</p>
+<p>If a recording cannot be decoded on your phone, the app switches that instrument to synthesis by itself rather than going quiet. Settings shows which state it is in, under <em>instrument sound</em>.</p>
+
+<h3>Playing back what I sang</h3>
+<p>After a Follow Voice session, <strong>Play it back</strong> sounds your take on a harmonium — your notes, your pauses, your pacing. Saving the session keeps it, and the Riyaz list plays it again with ▶.</p>
+<p>What is kept is the <em>notes</em>, not your voice: a list of which note started when, the way notation works. There is no audio recording of you anywhere in the app. See the <a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Taals and tunings</h2>
+
+<h3>My taal's theka is different from the one I was taught</h3>
+<p>Very likely, and neither is wrong. Thekas vary by gharana, by region, and by what a particular teacher plays. Sangat ships the most widely taught form of each, and where there is a well-known alternative it is a second theka on the same taal — tap the taal and look for the <em>thekas</em> list. Each taal also carries a note where the variation matters.</p>
+<p>If a form you were taught is missing, write in and say which taal, which theka and which gharana. That is a good bug report.</p>
+
+<h3>Where is the taal I am looking for?</h3>
+<p>The search box on the <strong>Taal</strong> tab matches Roman and Devanagari names. 68 taals are included, from 4 matras to 28.</p>
+
+<h2>Practice</h2>
+
+<h3>Saving a setup</h3>
+<p>The <strong>Riyaz</strong> tab. Name the current board — Sa, taal, tempo, tunings, volumes — and it will come back exactly as you left it. Long-press a saved session to rename, duplicate, favourite or delete it.</p>
+
+<h3>Stopping automatically</h3>
+<p>Under <em>Auto stop</em>, also on Riyaz: after a number of minutes or a number of cycles. It fades out rather than cutting off.</p>
+
+<h2>Reporting a problem</h2>
+<p>Email <a href="mailto:support@getsangat.com">support@getsangat.com</a>. What helps:</p>
+<ul>
+  <li>Your phone and OS version (e.g. "iPhone 14, iOS 18.2" or "Pixel 7, Android 15").</li>
+  <li>The version of Sangat — it is at the bottom of Settings, under <em>this build</em>.</li>
+  <li>What you did, what you expected, and what happened instead.</li>
+  <li>For a musical problem: the taal, the theka and the tempo.</li>
+</ul>
+<p>Sangat has no crash reporting, by design, so a description from you is genuinely the only way a problem gets found.</p>
+
+<h2>Requesting a feature</h2>
+<p>Also welcome, at the same address. Taals, thekas, tunings and ragas are the easiest things to add.</p>
+
+<footer>
+  Sangat · संगत — a tabla, tanpura and swarmandal for riyaz.<br>
+  <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="notices.txt">Open-source notices</a>
+</footer>
+
+</div>
+</body>
+</html>

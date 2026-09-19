@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Sangat</title>
+<meta name="description" content="What Sangat keeps on your phone, what the optional account holds, what the microphone is used for, and how to delete everything.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <div class="name">Sangat</div>
+    <div class="script">संगत</div>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="privacy.html" aria-current="page">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="notices.txt">Open-source notices</a>
+</nav>
+
+<h1>Privacy Policy</h1>
+<p class="lede">Practising sends nothing anywhere. The one thing Sangat ever collects is the optional account — your email, and your Sangat Pro membership — and you can delete it from Settings.</p>
+<p class="date">Effective 19 September 2026 · applies to Sangat 1.1.0 and later, on iOS and Android</p>
+
+<div class="card">
+  <h2>The short version</h2>
+  <ul>
+    <li><strong>No account to practise.</strong> Everything you need is on the phone; nothing about your practice is sent anywhere.</li>
+    <li>An <strong>optional account</strong> exists so Sangat Pro follows you between devices. It holds your <strong>email address</strong> and your <strong>membership</strong>, nothing else, and it can be <strong>deleted from Settings</strong> at any time.</li>
+    <li>No analytics, no crash reporting, no advertising.</li>
+    <li>The <strong>microphone</strong> is used only while you have Follow Voice listening. The audio is analysed on your phone as it arrives and is never recorded, stored or transmitted.</li>
+    <li>If you <strong>save a Follow Voice take</strong>, what is kept is the melody it heard — a list of notes and times, like a page of notation — not the sound of your voice. It stays on your device.</li>
+    <li>Your settings and saved sessions live in the app's own storage on your device and are removed when you uninstall it.</li>
+  </ul>
+</div>
+
+<h2>What Sangat collects</h2>
+<p>Only the account, and only if you sign in. Signing in is asked for when you buy Sangat Pro, or when you want a purchase to appear on another device; practising never needs it.</p>
+<h2>Your account</h2>
+<p>An account holds three things: your <strong>email address</strong> (you sign in with a code sent to it — there is no password), the times you signed in, and your <strong>membership record</strong> — which Sangat Pro plan you have, where it was bought (the App Store, Google Play or getsangat.com) and when it renews or ends. The account service is hosted by Supabase. The record is used for one purpose, deciding whether Sangat Pro is on, and never for marketing.</p>
+<p>When you buy Sangat Pro in the app, the purchase is made by Apple or Google under their own terms. RevenueCat, a subscription service, relays the fact of the purchase to the account service so it can follow your account; neither we nor RevenueCat see your card. The account service stores which plan you have, not how you paid.</p>
+<p><strong>Deleting the account</strong> is in the app: Settings → Account → Delete account. It removes the account and every record under it at once; the stores keep their own transaction records for as long as the law requires them to. A subscription is cancelled with the store, as with any app, and the deletion screen says so first.</p>
+<p>Nothing else is sent. Your settings, your saved sessions and everything about your practice stay on the phone, as the next sections describe, and the app talks to no other service.</p>
+
+<h2>The microphone</h2>
+<p>One feature — <strong>Follow Voice</strong> — uses the microphone. It listens while you sing so that it can work out which Sa (tonic) you are singing in, and tune the tanpura and tabla to it.</p>
+<table>
+  <tr><th>Question</th><th>Answer</th></tr>
+  <tr><td>When is the microphone on?</td><td class="answer">Only while Follow Voice is listening, which only happens after you tap "Start listening". It stops when you tap again, when you leave the screen, and when the app goes to the background.</td></tr>
+  <tr><td>Is the audio recorded?</td><td class="answer">No. Each buffer of audio is analysed for pitch as it arrives and then discarded. Nothing is written to disk.</td></tr>
+  <tr><td>Is the audio sent anywhere?</td><td class="answer">No. There is nowhere for it to go — see above.</td></tr>
+  <tr><td>What is kept?</td><td class="answer">Two things, both on your phone. The tonic frequency it settled on, which becomes your Sa setting; and, while the app is open, the <em>shape</em> of what you sang — see below.</td></tr>
+  <tr><td>Can I refuse?</td><td class="answer">Yes. Declining the microphone permission disables Follow Voice and nothing else. You can change your mind at any time in your phone's Settings.</td></tr>
+</table>
+
+<h2>Playing your take back</h2>
+<p>While Follow Voice is listening it follows the pitch of your voice, and when you stop it turns that pitch line into a sequence of notes so it can play what you sang back to you on a harmonium. "Play it back" sounds that sequence; saving a session keeps it.</p>
+<p>What is kept is the <strong>note sequence, not the audio</strong>. It is a list of which note started when and for how long — the same information a page of notation carries. There is no recording of your voice anywhere in the app, at any point: each buffer of microphone audio is measured for pitch and then discarded, and no code path writes audio to disk.</p>
+<p>The sequence stays in the app's own private storage on your phone. It is not readable by other apps, it is never transmitted, and deleting the session — or the app — removes it.</p>
+
+<h2>What is stored on your device</h2>
+<p>Sangat keeps your preferences — theme, tempo, taal, Sa, instrument volumes — and any practice sessions you save, in the app's own private storage. This data never leaves the device, is not readable by other apps, and is deleted along with the app when you uninstall it.</p>
+<p>Saved sessions contain what you put in them: a name you typed, the musical settings that were active, and — if the session was saved from a Follow Voice take — the note sequence described above. There is no way to attach an audio recording, a photo, a contact or a location to one, because the app cannot read any of those.</p>
+
+<h2>What Sangat does not do</h2>
+<ul>
+  <li>No analytics or usage tracking of any kind.</li>
+  <li>No crash or diagnostics reporting.</li>
+  <li>No advertising, and no advertising identifier (IDFA / Advertising ID) is read.</li>
+  <li>No cookies, no fingerprinting, no cross-app or cross-site tracking.</li>
+  <li>No location, contacts, photos, calendar, health or files access — the app requests none of these permissions.</li>
+  <li>No payment information: Sangat Pro is bought through the App Store or Google Play, and the app never sees a card.</li>
+</ul>
+
+<h2>Permissions Sangat asks for</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Microphone</td><td class="answer">Follow Voice, as described above. Requested only when you first start listening.</td></tr>
+  <tr><td>Notifications <span style="color:var(--faint)">(Android 13+)</span></td><td class="answer">To show the playback controls in the notification shade while Sangat plays in the background. No other notification is ever posted.</td></tr>
+  <tr><td>Vibration</td><td class="answer">The optional pulse on sam, the first beat of each cycle.</td></tr>
+</table>
+
+<h2>The app stores themselves</h2>
+<p>Sangat is distributed through the Apple App Store and Google Play. Apple and Google collect their own information as part of running those stores — downloads, ratings, and, if you have opted in with them, crash reports. That collection is theirs and is governed by their policies, not by this one. What they pass on to the developer is aggregate and anonymous: how many people installed the app, in which countries, on which OS versions. It cannot identify you.</p>
+<ul>
+  <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+
+<h2>Children</h2>
+<p>Sangat is not directed at children and contains nothing unsuitable for them. Because it collects no data from anyone, it collects no data from children either — including none of the categories covered by COPPA or the GDPR's provisions on children.</p>
+
+<h2>Your rights</h2>
+<p>Laws such as the GDPR, the UK GDPR, the CCPA and India's DPDP Act give you rights over personal data a company holds about you — access, correction, deletion, portability, and the right to object. What Sangat holds about you is the account described above, and you can see it in Settings, correct it by signing in with another address, and delete it there. Everything else the app has ever stored is on your phone and goes when you uninstall it.</p>
+<p>If you would like written confirmation of that for your records, ask and you will get it.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version of Sangat ever does something this page does not describe, this page will be updated <em>before</em> that version is released, and the change will be called out in the release notes. The effective date at the top of the page always refers to the version currently on the stores.</p>
+
+<h2>Contact</h2>
+<p>Sangat is made by Sudheer Singh. For anything about privacy, or anything else: <a href="mailto:support@getsangat.com">support@getsangat.com</a>.</p>
+
+<footer>
+  Sangat · संगत — a tabla, tanpura and swarmandal for riyaz.<br>
+  <a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="notices.txt">Open-source notices</a>
+</footer>
+
+</div>
+</body>
+</html>
